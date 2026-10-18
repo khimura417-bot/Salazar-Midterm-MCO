@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Maintenance & Mileage Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Car Maintenance & Mileage Log</h1>
+        <p>Midterm Prototype</p>
+    </header>
+
+    <main class="container">
+        <!-- Dashboard Overview -->
+        <section class="card">
+            <h2>Vehicle Status</h2>
+            <p>Current Mileage: <span id="current-mileage">0</span> miles</p>
+        </section>
+
+        <!-- Mileage Log Section -->
+        <section class="card">
+            <h2>Log Mileage</h2>
+            <form id="mileage-form">
+                <input type="date" id="log-date" required>
+                <input type="number" id="log-miles" placeholder="Mileage entered" required>
+                <button type="submit">Add Log</button>
+            </form>
+            <h3>History</h3>
+            <ul id="mileage-list">
+                <!-- JavaScript will inject logs here -->
+            </ul>
+        </section>
+
+        <!-- API Integration Section -->
+        <section class="card">
+            <h2>Driver's Quote / Tip of the Day</h2>
+            <p id="api-fact">Loading tip from API...</p>
+        </section>
+
+        <!-- Payment Mock Section (For Prof's Requirement) -->
+        <section class="card payment-card">
+            <h2>Upgrade to Premium Plan</h2>
+            <p>Unlock advanced maintenance analytics and cloud sync.</p>
+            <button id="pay-btn">Pay $9.99 (Mock Checkout)</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
