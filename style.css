@@ -1,0 +1,114 @@
+/* Global Reset and Body Styling: Sets the default font, clean background color, and removes default browser margins */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section: Styles the top banner with a dark blue theme and centered text */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #bdc3c7;
+}
+
+/* Main Container: Centers the core content and limits max width for a clean mobile-friendly layout */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Card Component: Creates individual white container blocks with rounded corners and soft drop shadows */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+/* Form Layout: Uses CSS Flexbox to align inputs and buttons neatly side-by-side */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields: Styles text and number boxes with clean borders and flexible width */
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+/* Action Buttons: Standard button styling with a blue accent and hover animation */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* History List Layout: Removes default bullet points and styles individual items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #ecf0f1;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Payment Card Modifier: Highlights the payment section with a distinct red accent border */
+.payment-card {
+    border-left: 5px solid #e74c3c;
+}
+
+.payment-card button {
+    background-color: #e74c3c;
+}
+
+.payment-card button:hover {
+    background-color: #c0392b;
+}
+
+/* Delete Button: Transparent styling with a subtle hover background tint */
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0 5px;
+}
+
+.delete-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}

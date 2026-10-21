@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets character encoding and makes the page responsive on mobile and desktop screens -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Maintenance & Mileage Log</title>
+    <!-- Links our external CSS stylesheet for styling the UI layout -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section: Displays the main title and project phase -->
+    <header>
+        <h1>Car Maintenance & Mileage Log</h1>
+        <p>Midterm Prototype</p>
+    </header>
+
+    <!-- Main Container: Holds all the interactive feature cards -->
+    <main class="container">
+        
+        <!-- Dashboard Overview: Displays live totals dynamically updated by JavaScript -->
+        <section class="card">
+            <h2>Vehicle Status</h2>
+            <p>Current Mileage: <span id="current-mileage">0</span> miles</p>
+        </section>
+
+        <!-- Mileage Log Section: Form to capture input and list past entries -->
+        <section class="card">
+            <h2>Log Mileage</h2>
+            <!-- Form requires a date and mileage number before submission -->
+            <form id="mileage-form">
+                <input type="date" id="log-date" required>
+                <input type="number" id="log-miles" placeholder="Mileage entered" required>
+                <button type="submit">Add Log</button>
+            </form>
+            <h3>History</h3>
+            <!-- Unordered list where JavaScript dynamically injects saved logs -->
+            <ul id="mileage-list">
+                <!-- JavaScript will inject logs here -->
+            </ul>
+        </section>
+
+        <!-- API Integration Section: Displays live remote data fetched from an endpoint -->
+        <section class="card">
+            <h2>Driver's Quote / Tip of the Day</h2>
+            <p id="api-fact">Loading tip from API...</p>
+        </section>
+
+        <!-- Payment Mock Section: Simulated checkout for the midterm requirement -->
+        <section class="card payment-card">
+            <h2>Upgrade to Premium Plan</h2>
+            <p>Unlock advanced maintenance analytics and cloud sync.</p>
+            <button id="pay-btn">Pay $9.99 (Mock Checkout)</button>
+        </section>
+    </main>
+
+    <!-- Links our external JavaScript file that handles logic, storage, encryption, and API calls -->
+    <script src="script.js"></script>
+</body>
+</html>
